@@ -4,17 +4,17 @@ const gameState = {
 
 const config = {
 	type: Phaser.AUTO,
-	width: 450,
-	height: 500,
-	backgroundColor: "b9eaff",
+	width: 800,
+	height: 600,
+	backgroundColor: "#2D3134",
 	physics: {
 		default: 'arcade',
 		arcade: {
-			gravity: { y: 200 },
+			gravity: { y: 0 },
 			enableBody: true,
 		}
 	},
-	scene: [StartScene]
+	scene: [StartScene, GameScene]
 };
 
 const game = new Phaser.Game(config);
